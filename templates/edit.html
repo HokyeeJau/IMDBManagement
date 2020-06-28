@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Edit</title>
+        <link rel="stylesheet" href="/static/mng.css">
+    </head>
+    <body style="background-color: pink">
+        <div style="margin: 0 auto; margin-top: 150px; width: 800px; height: 500px; font-size: 30px; background-color: white; opacity:0.8; border-radius: 4px; text-align: center;">
+            <h1 style="color:#484848">Edit</h1>
+            <form action="{{modify}}" method="post">
+                {{mod_input|safe}}
+                <br />
+                <input type="submit" value="Modify" style="margin-left: 13px;width: 200px;height:30px;margin-top: 30px;">
+            </form>
+            <form action="{{delete}}" method="post">
+                <label style="visibility:hidden;"><input type="text" name="actor" value="{{id}}" style=" width: 0px;"/></label>
+                <input type="submit" value="Delete" style="width:200px; height: 30px;">
+            </form>
+        </div>
+    </body>
+</html>

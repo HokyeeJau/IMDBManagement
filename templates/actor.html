@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="./css/mng.css">
+        <link rel="icon" type="image/png" href="./img/common/icon.png">
+        <link rel="stylesheet" href="/static/mng.css">
+        <script src="js/mng.js"></script>
+        <title>ManagementPage</title>
+    </head>
+    <body style="background-color: pink;">
+        <!-- Navigation Top Bar -->
+        <div id="top">
+            <header>
+                <span></span>
+                <!-- Management Content -->
+                <div style="font-size:36px;margin-left:100px; margin-top:20px;">
+                    <nav>
+                        <a href="{% url 'main' %}" style="text-decoration:none;color:#484848;">Main</a>
+                        <a href="{% url 'actor' %}" style="text-decoration:none;color:#484848;">Actor</a>
+                        <a href="{% url 'director' %}" style="text-decoration:none;color:#484848;">Director</a>
+                        <a href="{% url 'movie' %}" style="text-decoration:none;color:#484848;">Movie</a>
+                    </nav>
+                </div>
+            </header>
+        </div>
+        <!-- Contenst -->
+        <div id="ctn">
+            <main>
+                <div class="ctn_block">
+                    <!-- Table/Card -->
+                    <div id="block_nav" >
+                        <form id='select_field' action="asearch" method="get">
+                            <div class="select_list bg_lightyellow">
+                <div class="select_item">
+                    <label>ID</label>
+                    <input type="text" name="id" />
+                </div>
+                <div class="select_item">
+                    <label>First Name</label>
+                    <input type="text" name="fir" />
+                </div>
+                <div class="select_item">
+                    <label>Second Name</label>
+                    <input type="text" name="sec" />
+                </div>
+                <div class="select_item">
+                    <label>Gender</label>
+                    <select name="gender">
+                        <option value="" selected="selected"></option>
+                        <option value="M">M</option>
+                        <option value="F">F</option>
+                    </select>
+                </div>
+                <input type="submit" value="Search">
+            </div>
+        </form>
+        <form class="check_table bg_lightyellow" action="aedit" method="get">
+            <table class="table_body">
+                <thead>
+                    <tr>
+                        <th>Actor ID</th>
+                        <th>First Name</th>
+                        <th>Second Name</th>
+                        <th>Gender</th>
+                        <th>Movies</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{actor_list|safe}}
+                </tbody>
+            </table>
+            <input type="submit" value="Edit">
+        </form>
+        <form action="add" method="get">
+            <input type="submit" name="aadd" value="Add">
+        </form>
+    </div>
+</div>
+</main>
+</div>
+</body>
+</html>

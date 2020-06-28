@@ -1,0 +1,291 @@
+.bg_pink {
+    background-color: pink;
+}
+.bg_white {
+    background-color: white;
+}
+.bg_lightgrey {
+    background-color: #989898;
+}
+.bg_lightyellow {
+    background-color: #eef0b2;
+}
+body {
+    background-image: url(./img/common/logo.png);
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0px;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+header span{
+    width: 60px;
+}
+details-menu{
+    box-shadow:0 1px 15px rgba(27,31,35,.15);
+    position: absolute;
+    top: 100%;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    list-style: none;
+    border-radius: 4px;
+    border: 1px solid rgba(27,31,35,.15);
+    display: flex;
+    flex-direction: column;
+    background: hsla(0,0%,100%,.7);
+    width: 180px;
+    right: 0;
+    left: auto;
+}
+details-menu a {
+    padding: 10px;
+    font-size: 14px;
+}
+#top {
+    height: 65px;
+    width: 100%;
+    background-color: white;
+    opacity: 0.8;
+}
+
+#mng_ctn {
+    margin: 5px;
+    height: 55px;
+    min-width: 1100px;
+    display: inline-block;
+    float:left;
+}
+
+#mng_ctn nav{
+    margin-top: 10px;
+    height:35px;
+}
+
+
+#mng_ctn nav a {
+    display: inline;
+    font-size: 25px;
+    margin-left: 60px;
+}
+
+#mng_ctn nav a:hover, details-menu a:hover, summary:hover {
+    color: #484848;
+}
+
+#logo {
+    height: 60px;
+    width: 60px;
+}
+
+#logo img{
+    width: 55px;
+    height: 55px;
+    margin: 5px;
+}
+
+#account {
+    float: right;
+    margin-right: 0px;
+    position: relative;
+}
+
+#mng_ctn nav a, details-menu a, summary {
+    text-decoration: none;
+    color: #989898;
+}
+
+#ctn {
+    min-height: 600px;
+}
+#footer {
+    height: 100px;
+    min-height: 100px;
+    background-color: #7ecfdb;
+}
+.ctn_block {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#block_nav {
+    border-radius: 4px;
+    border: 1px solid pink;
+    min-width: 1250px;
+    width: 1350px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+#card_list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+    padding: 0px;
+}
+
+.card {
+    margin: 23px;
+    border-radius: 10px;
+    min-width: 250px;
+    min-height: 510px;
+}
+.card:hover {
+    box-shadow:0 1px 15px rgba(27,31,35,.15);
+}
+.card_name {
+    font-size: 30px;
+}
+.card_subname {
+    font-size: 18px;
+}
+.card_count {
+    font-size: 50px;
+    color: #990033;
+}
+.card_count:hover {
+    color: red;
+}
+.card_subname, .card_count {
+    margin: 10px;
+}
+
+.card_name, .card_subname{
+    color: #484848;
+}
+
+.team {
+    text-align: center;
+    height: 50px;
+    margin: 0px auto;
+    margin-top: 40px;
+}
+h3 {
+    font-size: 14px;
+    color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: lighter;
+}
+
+a img {
+    width: 80px;
+    height: 40px;
+    margin-top:5px;
+    text-align: center;
+}
+.team div{
+    margin: 0 auto;
+    display: inline-flex;
+    flex-direction: row;
+    margin: 0;
+}
+
+#select_field {
+    height: 50px;
+}
+.select_list {
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    margin: 5px;
+    color: #484848;
+    border-radius: 4px;
+    border: 1px solid white;
+}
+input {
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+.select_item {
+    height: 50px;
+    width: 250px;
+    text-align: center;
+}
+.select_item label {
+    font-size: 18px;
+    vertical-align: middle;
+    display: inline-block;
+    padding: 7.5px 0;
+}
+.select_item input, .select_item select {
+    vertical-align: middle;
+    text-align: center;
+    height: 30px;
+    font-size: 18px;
+    width: 100px;
+}
+
+.select_list button{
+    margin-top: 7px;
+    vertical-align: middle;
+    border: 1px solid rgba(27,31,35,.15);
+    font-size: 20px;
+    height: 35px;
+}
+.check_table {
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: table;
+    width: 1340px;
+    border-radius: 4px;
+}
+.table_body {
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 1300px;
+    text-align: center;
+}
+.table_body thead{
+    font-size: 20px;
+    color: #484848;
+}
+
+.table_body thead tr th {
+    background-color: white;
+}
+
+.table_body tbody{
+    font-size: 14px;
+    color: #585858;
+}
+
+.table_body tbody tr{
+    height: 40px;
+}
+
+.table_body tbody tr td {
+    border-bottom: 1px solid #FFFFF0;
+}
+
+#page {
+    width: 500px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 8px;
+}
+.pg {
+    text-align: center;
+    height: 20px;
+    width: 20px;
+    margin-right: 5px;
+}
+
+td a img{
+    width:30px;
+    height:30px;
+}
+

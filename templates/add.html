@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="/static/mng.css">
+        <title>Add Element</title>
+    </head>
+    <body style="background-color: pink">
+        <div style="margin: 0 auto; margin-top: 150px; width: 600px; height: 460px; font-size: 30px; background-color: white; opacity:0.8; border-radius: 4px; text-align: center;">
+            <h1 style="color:#484848">Add</h1>
+            <form action="{{add}}" method="post">
+                {{add_input|safe}}
+                <br />
+                <input type="submit" value="Yes" style="width:200px; height: 30px;">
+            </form>
+            <a href="{% url 'main' %}"></a>
+        </div>
+    </body>
+</html>
